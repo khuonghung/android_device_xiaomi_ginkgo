@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The CherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ginkgo.mk
+    $(LOCAL_DIR)/cherish_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ginkgo-user \
-    lineage_ginkgo-userdebug \
-    lineage_ginkgo-eng
+    cherish_ginkgo-user \
+    cherish_ginkgo-userdebug \
+    cherish_ginkgo-eng
