@@ -12,7 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Inherit some common PixelExtended stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
