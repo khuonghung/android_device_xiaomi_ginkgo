@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The CherishOS Project
+# Copyright (C) 2020 The PixelExtended Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -14,22 +14,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
-# Inherit some common CherishOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-CHERISH_BUILD_TYPE := OFFICIAL
-CHERISH_WITHGAPPS := true
+# Inherit some common PixelExtended stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+IS_PHONE := true
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 
-# Maintainer
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=KhuongHung
-
 
 # Device identifier
-PRODUCT_NAME := cherish_ginkgo
+PRODUCT_NAME := aosp_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
