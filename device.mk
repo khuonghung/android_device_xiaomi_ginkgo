@@ -391,9 +391,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/xiaomi/ginkgo
 
-# Snap
+# Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GoogleCamera
 
 # Telephony
 PRODUCT_PACKAGES += \
