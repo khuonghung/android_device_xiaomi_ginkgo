@@ -476,7 +476,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libqdMetaData.vendor \
     libwfdaac_vendor \
-    vendor.display.config@2.0
+    vendor.display.config@2.0 \
+	init.performance_level.rc
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
